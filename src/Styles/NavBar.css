@@ -1,0 +1,201 @@
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #10141b;
+    align-items: center;
+}
+nav h2{
+    color: #fff;
+    margin-left: 40px;
+}
+nav a {
+    text-decoration: none;
+}
+nav span{
+    cursor: pointer;
+    margin-left: 40px;
+    font-size: .85rem;
+    text-transform: uppercase;
+    
+}
+nav span:hover{
+    color: #fff;
+    border-bottom: 2px solid #EE9B00;
+    padding-bottom: 5px;
+}
+span #HomeLight, #MoviesLight, #TrendingLight, #PricingLight{
+    color: #fff;
+}
+span #HomeLight:hover, #MoviesLight:hover, #TrendingLight:hover, #PricingLight:hover{
+    border-bottom: 2px solid #ff206e;
+}
+#navBarColor{
+    background-color: #38bdab;
+    transition: .6s;
+}
+.nav-options{
+    display: flex;
+    align-items: center;
+}
+#heading{
+    color: #ff206e;
+}
+#navBarColor span:hover{
+    border-bottom: 2px solid #ff206e;
+    padding-bottom: 5px;
+}
+.input-group{
+    display: flex;
+    align-items: center;
+}
+#Color-switcher{
+    position: relative;
+    margin-right: 40px;
+    background-color: #413E44;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+}
+#Color-switcher-mover{
+    position: absolute;
+    left: 5px;
+    top: 4px;
+    background-color: #fff;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    transition: .6s;
+}
+#Color-switcher-moved{
+    position: absolute;
+    background-color: #fff;
+    left: 40px;
+    top: 4px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    transition: .6s;
+}
+.input-group input{
+    position: relative;
+    width: 323px;
+    height: 4vh;
+    border-radius: 16px;
+    border: none;
+    margin-right: 30px;
+}
+.input-group input[type='text']{
+    padding-left: 17px;
+    font-size: 1rem;
+    color: black;
+}
+.input-group input::placeholder{
+    color: black;
+}
+.input-group input:focus{
+    outline: none;
+}
+#search{
+    position: absolute;
+    margin-left: 310px;
+}
+.mainBgColor{
+    background-color:#0c1e25;
+    width: 100%;
+}
+.secondaryBgColor{
+    background-color: #fff;
+    width: 100%;
+}
+.image{
+    width: 270px;
+    height: 400px;
+}
+.overview{
+    width: 400px;
+    display: none;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 20px;
+    gap: 35px;
+    margin-left: 10px;
+}
+.container{
+    width: 270px;
+    height: 570px;
+    background-color:#19222d
+    
+}
+.container:hover .overview{
+    display: block;
+    width: 200px;
+    position: absolute;
+    color: white;
+    margin-left: 30px;
+    font-size: 13px;
+    
+}
+.container:hover .details{
+    display: none;
+}
+.details{
+    text-align: center;
+    color: white;
+}
+.login{
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+    /* position: relative; */
+    left: 600px;
+    top: 100px;
+    border-radius: 5px;
+}
+.email{
+    position: relative;
+    width: 200px;
+    height: 30px;
+    top: 30px;
+    left: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.password{
+    position: relative;
+    width: 200px;
+    height: 30px;
+    top: 40px;
+    left: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.Login{
+    position: relative;
+    width: 200px;
+    height: 30px;
+    top: 50px;
+    left: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.email-icon{
+    position: absolute;
+    top: 145px;
+}
+.password-icon{
+    position: absolute;
+    top: 190px;
+}
+::placeholder{
+    position: absolute;
+    left: 10px;
+    color: black;
+}
+.heading{
+    position: absolute;
+    }
