@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import axios from 'axios'
 import { Container } from './NavBar'
-
+import { FaHeart } from "react-icons/fa";
 function TvShows ()  {
   const {toggle,inputValue}=useContext(Container)
   const[TvShowData, setTvShowData]=useState([])
@@ -45,10 +45,10 @@ function TvShows ()  {
 
       
       <div className='container'  id ='container' key={id}>
-        
- 
-      {/* <AiFillPlayCircle size='2em' className='playCircle' /> */}
+        <div className='heart'>
+        <a href='#'>  <FaHeart size='1.5rem' className='fav' /></a>
      <img className='image' src={`${Images +poster_path}`}/>
+        </div>
    <div className='details'>
      <h3 >{name}</h3> 
      <p>{popularity}</p>

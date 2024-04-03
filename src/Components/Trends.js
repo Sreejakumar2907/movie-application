@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import axios from 'axios'
 import { Container } from './NavBar'
+import { FaHeart } from "react-icons/fa";
 function Trending ()  {
   const {toggle}=useContext(Container)
   const[TrendingData, setTrendingData]=useState([])
@@ -37,7 +38,10 @@ function Trending ()  {
 
       
       <div className='container'  id ='container' key={id}>
+    <div className='heart'>
+    <a href='#'><FaHeart size='1.5rem' className='fav' /></a>
      <img className='image' src={`${Images +poster_path}`}/>
+    </div>
    <div className='details'>
      <h3 >{title}</h3> 
      <p>{popularity}</p>

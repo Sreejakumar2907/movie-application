@@ -6,6 +6,9 @@ import Movies from './Movies';
 import TvShows from './TvShows';
 import Trends from './Trends';
 import Login from './Login';
+import SignUp from './SignUp';
+import AuthDetails from './AuthDetails';
+
 
 export const Container = React.createContext()
 
@@ -30,6 +33,9 @@ const NavBar = () => {
             <NavLink to="Login" style={({isActive}) =>  {return{color : isActive ? '#fff' : '#EE9B00'}}}>
             <span id={toggle ? 'Movies':'MoviesLight'}>Login</span>
             </NavLink>
+            <NavLink to="SignUp" style={({isActive}) =>  {return{color : isActive ? '#fff' : '#EE9B00'}}}>
+            <span id={toggle ? 'Movies':'MoviesLight'}>SignUp</span>
+            </NavLink>
         </div>
         <div className='input-group'>
         <input type='text' placeholder='Search' onChange={(e)=>{setInputValue(e.target.value)}}/>
@@ -39,11 +45,14 @@ const NavBar = () => {
         </div>
         </div>
    </nav>
+
+   <AuthDetails/>
    <Routes>
       <Route path='Movies' element={<Movies/>} />
       <Route path='TvShows' element={<TvShows/>} />
       <Route path='Trends' element={<Trends/>} />
       <Route path='Login' element={<Login/>}/>
+      <Route path='SignUp' element={<SignUp/>}/>
    </Routes>
    </>
    </Container.Provider>
