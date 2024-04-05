@@ -4,18 +4,14 @@ import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
 import {Link} from "react-router-dom"
 import { useState } from 'react';
-
-import { auth } from '../Firebase/FireBase'
 // import { FirebaseError } from 'firebase/app';
-
-
 const SignUp = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
     const signUp=(e)=>{
       e.preventDefault()
-      createUserWithEmailAndPassword(auth,email,password)
+      createUserWithEmailAndPassword(email,password)
       .then(( userCredential)=>{
        console.log(userCredential);
       })

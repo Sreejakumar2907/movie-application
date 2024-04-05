@@ -2,8 +2,6 @@ import React, { useContext, useEffect, useState } from 'react'
 import axios from 'axios'
 import { Container } from './NavBar'
 import { FaHeart } from "react-icons/fa";
-import firebase from '../Firebase/FireBase'
-import { collection, addDoc } from "firebase/firestore";
 import Favorite from './Favorite';
 
 // import { AiFillPlayCircle } from "react-icons/ai";
